@@ -103,7 +103,7 @@ fun LoginScreen(
         Spacer(modifier = Modifier.height(16.dp))
 
         Row(horizontalArrangement = Arrangement.spacedBy(24.dp)) {
-            BiometricCircleButton(icon = Icons.Default.Face, onClick = onBiometricClick)
+//            BiometricCircleButton(icon = Icons.Default.Face, onClick = onBiometricClick)
             BiometricCircleButton(icon = Icons.Default.Fingerprint, onClick = onBiometricClick)
         }
 
