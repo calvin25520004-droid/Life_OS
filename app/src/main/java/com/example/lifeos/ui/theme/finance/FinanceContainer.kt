@@ -23,19 +23,19 @@ import androidx.compose.ui.unit.sp
 @Composable
 fun FinanceScreen() {
     Column(modifier = Modifier.fillMaxSize().padding(16.dp).verticalScroll(rememberScrollState())) {
-        Text("Total Balance", color = Color.Gray)
-        Text("$42,590.24", fontSize = 32.sp, fontWeight = FontWeight.Bold, color = Color(0xFF00ADEF))
+        Text("Home", color = Color.Gray)
+
 
         Spacer(modifier = Modifier.height(20.dp))
 
         // Card Income/Expense
-        Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(12.dp)) {
-            FinanceCard("Income", "$8,200", Color(0xFFE1F5FE), Modifier.weight(1f))
-            FinanceCard("Expenses", "$3,145", Color(0xFFFFF3E0), Modifier.weight(1f))
-        }
+//        Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(12.dp)) {
+//            FinanceCard("Income", "$8,200", Color(0xFFE1F5FE), Modifier.weight(1f))
+//            FinanceCard("Expenses", "$3,145", Color(0xFFFFF3E0), Modifier.weight(1f))
+//        }
 
         Spacer(modifier = Modifier.height(24.dp))
-        Text("Recent Transactions", fontWeight = FontWeight.Bold, fontSize = 18.sp)
+        Text("Tips improvement", fontWeight = FontWeight.Bold, fontSize = 18.sp)
 
         // Contoh List Transaksi
         TransactionItem("Apple Store", "-$1,299.00", "Technology")
